@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # which kubectl
-$HOME/bin/kubectl version
+$HOME/bin/kubectl 
 
 if [ $? -eq 0 ]
 then
