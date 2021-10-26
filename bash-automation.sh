@@ -34,3 +34,6 @@ else
   echo "aws cli is was not installed and now installed successfully"
 fi
 
+# configuring kubectl to use kubernetes cluster
+
+$HOME/bin/aws eks --region region update-kubeconfig --name cluster_name
