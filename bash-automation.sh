@@ -23,8 +23,8 @@ else
   # sudo apt install unzip
   # curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
   # unzip awscliv2.zip
-  # ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
-  # aws --version
+  ./aws/install -i /var/lib/jenkins/workspace/Project-3-kubernetes-app/aws-cli -b /home/ubuntu/bin
+  aws --version
   echo "aws cli is was not installed and now installed successfully"
 fi
 
