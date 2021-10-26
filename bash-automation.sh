@@ -24,9 +24,9 @@ else
   # curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
   # unzip awscliv2.zip
   echo $HOME
-  # mkdir bin
-  # ./aws/install -i /var/lib/jenkins/workspace/Project-3-kubernetes-app/aws-cli -b /var/lib/jenkins/workspace/Project-3-kubernetes-app/bin
-  # aws --version
+  mkdir $HOME/bin
+  ./aws/install -i $HOME/aws-cli -b $HOME/bin
+  aws --version
   echo "aws cli is was not installed and now installed successfully"
 fi
 
