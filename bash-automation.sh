@@ -13,7 +13,9 @@ which kubectl
 # fi
 
 
-which aws
+# which aws
+
+/var/lib/jenkins/bin/aws --version
 
 if [ $? -eq 0 ]
 then
