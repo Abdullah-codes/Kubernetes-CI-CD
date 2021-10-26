@@ -10,7 +10,7 @@ else
   # curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
   chmod +x kubectl
   # mkdir $HOME/bin
-  install -o $USER -g $USER -m 0755 kubectl $HOME/bin/kubectl
+  install -o $USER -g $USER -m 0755 kubectl $HOME/bin
   # kubectl version --client 
   echo "kubectl is was not installed and now installed successfully"
 fi
