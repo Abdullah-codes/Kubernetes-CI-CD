@@ -36,4 +36,4 @@ fi
 
 # configuring kubectl to use kubernetes cluster
 
-$HOME/bin/aws eks --region region update-kubeconfig --name cluster_name
+$HOME/bin/aws eks --region us-east-2 update-kubeconfig --name education-eks-slpW92yd
