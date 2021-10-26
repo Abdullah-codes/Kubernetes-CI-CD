@@ -22,13 +22,23 @@ spec:
             name: flask-app-service
             port:
               number: 80
-  - host: hello.kardekari.xyz
+  - host: grafana.kardekari.xyz
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: flask-app-service
+            name: monitoring-grafana
             port:
               number: 80
+  - host: kibana.kardekari.xyz
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: kibana-logging
+            port:
+              number: 5601
