@@ -18,7 +18,7 @@ pipeline {
 
         stage('App deplyoment'){
             steps {
-                sh '$HOME/bin/kubectl'
+                sh '$HOME/bin/kubectl config get-contexts'
             }
         }
 
