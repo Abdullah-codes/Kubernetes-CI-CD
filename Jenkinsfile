@@ -16,5 +16,11 @@ pipeline {
             }
         }
 
+        stage('App deplyoment'){
+            steps {
+                sh 'echo $HOME'
+            }
+        }
+
 	}
 }
