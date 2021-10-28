@@ -22,8 +22,8 @@ pipeline {
                 sh '$HOME/bin/kubectl get all'
                 sh '$HOME/bin/kubectl apply -f ./app'
                 sh '$HOME/bin/kubectl apply -f ./ingress'
-                sh '$HOME/bin/kubectl apply -f ./logging'
-                sh '$HOME/bin/kubectl apply -f ./monitoring'
+                sh '$HOME/bin/kubectl delete -f ./logging'
+                sh '$HOME/bin/kubectl delete -f ./monitoring'
 
 
 
