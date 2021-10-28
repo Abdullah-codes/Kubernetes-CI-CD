@@ -23,6 +23,7 @@ pipeline {
                 sh '$HOME/bin/kubectl apply -f ./app'
                 sh '$HOME/bin/kubectl apply -f ./ingress'
                 sh '$HOME/bin/kubectl apply -f ./logging'
+                sh '$HOME/bin/kubectl apply -f ./monitoring'
 
 
 
