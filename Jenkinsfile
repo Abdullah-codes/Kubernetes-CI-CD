@@ -25,7 +25,7 @@ pipeline {
                 sh 'sleep 25s'
                 sh '$HOME/bin/kubectl apply -f ./ingress/ingress.yaml'
                 sh '$HOME/bin/kubectl apply -f ./logging'
-                /*sh '$HOME/bin/kubectl delete -f ./monitoring'*/
+                sh '$HOME/bin/kubectl apply -f ./monitoring'
 
 
 
