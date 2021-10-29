@@ -36,4 +36,7 @@ fi
 
 # configuring kubectl to use kubernetes cluster
 
-# $HOME/bin/aws eks --region us-east-2 update-kubeconfig --name education-eks-dRRfLqaZ
+$HOME/bin/aws eks --region us-east-2 update-kubeconfig --name education-eks-DBNYMYb6
+
+#giving aws command path to config file (beacuse we installed aws cli in jenkins user) 
+sed -i '$s/aws/\/var\/lib\/jenkins\/bin\/aws/g' $HOME/.kube/config 
