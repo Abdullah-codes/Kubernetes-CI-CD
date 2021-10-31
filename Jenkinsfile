@@ -46,7 +46,7 @@ pipeline {
         stage('Logging stack deplyoment'){
             steps {
                 
-                sh '$HOME/bin/kubectl apply -f ./logging'
+                sh '$HOME/bin/kubectl delete -f ./logging'
 
             }
         }
@@ -57,8 +57,11 @@ pipeline {
                     $HOME/bin/helm repo add prom-repo https://prometheus-community.github.io/helm-charts
                     $HOME/bin/helm install monitoring prom-repo/kube-prometheus-stack
                    '''*/
-                sh '''
+                /*sh '''
                     $HOME/bin/helm uninstall monitoring 
+                   '''*/ 
+                sh '''
+                    echo "hello" 
                    ''' 
 
             }
