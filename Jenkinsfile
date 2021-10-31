@@ -53,11 +53,13 @@ pipeline {
 
         stage('Monitoring stack deplyoment'){
             steps {
-                sh '''
+                /*sh '''
                     $HOME/bin/helm repo add prom-repo https://prometheus-community.github.io/helm-charts
                     $HOME/bin/helm install monitoring prom-repo/kube-prometheus-stack
+                   '''*/
+                sh '''
+                    $HOME/bin/helm uninstall monitoring 
                    ''' 
-
 
             }
         }
