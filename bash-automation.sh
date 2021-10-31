@@ -48,9 +48,9 @@ else
   $HOME/bin/helm version
 fi
 
-# configuring kubectl to use kubernetes cluster
+configuring kubectl to use kubernetes cluster
 
-# $HOME/bin/aws eks --region us-east-2 update-kubeconfig --name education-eks-DBNYMYb6
+$HOME/bin/aws eks --region us-east-2 update-kubeconfig --name education-eks-WLo3lmW4
 
-#giving aws command path to config file (beacuse we installed aws cli in jenkins user) 
-# sed -i '$s/aws/\/var\/lib\/jenkins\/bin\/aws/g' $HOME/.kube/config 
+giving aws command path to config file (beacuse we installed aws cli in jenkins user) 
+sed -i '$s/aws/\/var\/lib\/jenkins\/bin\/aws/g' $HOME/.kube/config 
