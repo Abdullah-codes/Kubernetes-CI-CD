@@ -48,7 +48,7 @@ else
   $HOME/bin/helm version
 fi
 
-configuring kubectl to use kubernetes cluster
+#configuring kubectl to use kubernetes cluster
 
 $HOME/bin/aws eks --region us-east-2 update-kubeconfig --name education-eks-WLo3lmW4
 
