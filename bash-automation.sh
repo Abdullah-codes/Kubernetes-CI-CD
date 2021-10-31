@@ -34,6 +34,20 @@ else
   echo "aws cli is was not installed and now installed successfully"
 fi
 
+$HOME/bin/helm version
+
+if [ $? -eq 0 ]
+then
+  echo " helm is installed"
+else
+  pwd 
+  curl --output helmzip https://get.helm.sh/helm-v3.7.1-linux-amd64.tar.gz
+  tar -zxvf helmzip
+  mv linux-amd64/helm $HOME/bin/helm
+  sleep 3s
+  $HOME/bin/helm version
+fi
+
 # configuring kubectl to use kubernetes cluster
 
 # $HOME/bin/aws eks --region us-east-2 update-kubeconfig --name education-eks-DBNYMYb6
