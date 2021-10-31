@@ -46,7 +46,7 @@ pipeline {
         stage('Logging stack deplyoment'){
             steps {
                 
-                sh '$HOME/bin/kubectl delete -f ./logging'
+                sh '$HOME/bin/kubectl apply -f ./logging'
 
             }
         }
@@ -59,7 +59,7 @@ pipeline {
                    '''*/
                 /*sh '''
                     $HOME/bin/helm uninstall monitoring 
-                   '''*/ 
+                   '''*/     
                 sh '''
                     echo "hello" 
                    ''' 
