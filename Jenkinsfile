@@ -18,6 +18,7 @@ pipeline {
 
         stage('App deplyoment'){
             steps {
+                sh 'sleep 2s'
                 /*sh '$HOME/bin/kubectl config get-contexts'
                 sh '$HOME/bin/kubectl get all'
                 sh '$HOME/bin/kubectl delete -f ./app'
