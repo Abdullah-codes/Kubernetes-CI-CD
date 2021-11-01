@@ -21,8 +21,8 @@ pipeline {
                 sh 'sleep 2s'
                 sh '$HOME/bin/kubectl config get-contexts'
                 sh '$HOME/bin/kubectl get all'
-                sh '$HOME/bin/kubectl delete -f ./app'
-                /*sh '$HOME/bin/kubectl delete -f ./ingress/deploy-ingress.yaml'
+                /*sh '$HOME/bin/kubectl delete -f ./app'
+                sh '$HOME/bin/kubectl delete -f ./ingress/deploy-ingress.yaml'
                 sh 'sleep 25s'
                 sh '$HOME/bin/kubectl delete -f ./ingress/ingress.yaml'
                 sh '$HOME/bin/kubectl delete -f ./logging'
@@ -41,10 +41,10 @@ pipeline {
                 sh 'sleep 40s'
                 sh '$HOME/bin/kubectl apply -f ./ingress/ingress.yaml'*/
 
-                /* for uninstallation */
+                /* for uninstallation 
                 sh '$HOME/bin/kubectl delete -f ./ingress/ingress.yaml'
                 sh 'sleep 5s'
-                sh '$HOME/bin/kubectl delete -f ./ingress/deploy-ingress.yaml'
+                sh '$HOME/bin/kubectl delete -f ./ingress/deploy-ingress.yaml'*/
 
             }
         }
