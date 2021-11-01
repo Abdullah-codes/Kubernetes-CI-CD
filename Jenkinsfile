@@ -46,6 +46,10 @@ pipeline {
                 sh 'sleep 5s'
                 sh '$HOME/bin/kubectl delete -f ./ingress/deploy-ingress.yaml'*/
 
+                sh '''
+                    echo "hello" 
+                   ''' 
+
             }
         }
 
