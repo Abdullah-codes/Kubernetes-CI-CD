@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: abdullahcodes/flask-app-main
+        image: your-image-name/flask-app-main
         ports:
         - containerPort: 5000
 
@@ -40,7 +40,7 @@ spec:
     spec:
       containers:
       - name: database
-        image: abdullahcodes/mariadb-database
+        image: your-image-name/mariadb-database
         ports:
         - containerPort: 3306
 
